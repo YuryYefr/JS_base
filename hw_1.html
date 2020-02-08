@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="hw_1.js"></script>
+</head>
+<body>
+<ul>
+    <li>Задачки 1 - конкатинация строк</li>
+    <li>Должна быть строка такого формата 'background-color: rgba(255, 255, 255, случайное число)'</li>
+</ul>
+<button class="btn bnt-link btn-primary" onclick="changeColor()">First task - Click button and look into console
+</button>
+<ul>
+    <li>В начале кода обьявить переменную age любого типа данных.</li>
+    <li>Если это число:</li>
+</ul>
+<ol>
+    <li>- Проверьте, что если число больше 18 включительно - выведите сообщение в консоль "Доступ разрешен"'</li>
+    <li>- Если же меньше - выведите "Доступ запрещен"</li>
+    <li>- Если переменная строчного типа - попытаться приобразовать к числу.</li>
+    <li>Если значение преобразовывается к числу - проверьте это его аналогично с предыдущим условием (больше/меньше
+        18)
+    </li>
+    <li>Если же нет - вывести ошибку что вы ввели неккоректную строку</li>
+    <li>Если же ввели любой другой тип данных - вывести ошибку: "Данный формат данных не поддерживается"</li>
+</ol>
+<button class="btn bnt-link btn-primary" onclick="accessAuthorization()">Second task - Click me</button>
+<p>Max value task result is in console</p>
+<ol>
+    <li>Используя оператор switch case, на вход может придти число от 0 до 23 Если число от 0 до 2 - выведите сообщение:
+        "Сутки только начались"
+    </li>
+    <li>Если число от 2 до 5 - выведите сообщение: "Еще рано, можно спать"</li>
+    <li>Если число от 5 до 7 - выведите сообщение: "Мам, можно еще чуть-чуть по спать"</li>
+    <li>Если число от 7 до 10 - выведите сообщение: "Собираемся в школу"</li>
+    <li>Если число от 10 до 14 - выведите сообщение: "Уроки в школе"</li>
+    <li>Если число от 14 до 17 - выведите сообщение: "Продленка"</li>
+    <li>Если число от 17 - 19 - выведите сообщение: "Дорога домой"</li>
+    <li>Если число от 19 - 23 - выведите сообщение: "Урррааа :)"</li>
+</ol>
+<button class="btn bnt-link btn-primary" onclick="schoolCase()">Switch task</button>
+<button class="btn bnt-link btn-warning" onclick="schoolIfElif()">Elif task</button>
+
+<script>
+let firstVal = 5;
+let secondVal = 7;
+let max = firstVal > secondVal ? firstVal : secondVal;
+console.log(max);
+
+</script>
+
+</body>
+</html>
