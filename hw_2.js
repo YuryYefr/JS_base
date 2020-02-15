@@ -1,6 +1,6 @@
 function countLetter(str, letter){
-    var str = document.getElementById('stringfield').value;
-    var letter = document.getElementById('letterfield').value;
+    let str = document.getElementById('stringfield').value;
+    let letter = document.getElementById('letterfield').value;
     let letterCounter = 0;
     let i = 0;
     while (i < str.length){
