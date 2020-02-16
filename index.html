@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Work 1</title>
+    <title>Home Work</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -12,14 +12,27 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     <script src="hw_1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+let firstVal = 5;
+let secondVal = 7;
+let max = firstVal > secondVal ? firstVal : secondVal;
+console.log(max);
+</script>
+    <script src="hw_2.js"></script>
+    <script src="hw_3.js"></script>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-">
 <ul>
     <li>Задачки 1 - конкатинация строк</li>
     <li>Должна быть строка такого формата 'background-color: rgba(255, 255, 255, случайное число)'</li>
 </ul>
-<button class="btn bnt-link btn-primary" onclick="changeColor()">First task - Click button and look into console
+    <button class="btn btn-primary" onclick="changeColor()">First task - Click button and look into console
 </button>
+    </div>
 <ul>
     <li>В начале кода обьявить переменную age любого типа данных.</li>
     <li>Если это число:</li>
@@ -34,8 +47,11 @@
     <li>Если же нет - вывести ошибку что вы ввели неккоректную строку</li>
     <li>Если же ввели любой другой тип данных - вывести ошибку: "Данный формат данных не поддерживается"</li>
 </ol>
-<button class="btn bnt-link btn-primary" onclick="accessAuthorization()">Second task - Click me</button>
-<p>Max value task result is in console</p>
+    </div>
+<button class="btn btn-primary" onclick="accessAuthorization()">Second task - Click me</button>
+    <div class="row">
+        <div class="col-lg">
+        <p>Max value task result is in console</p>
 <ol>
     <li>Используя оператор switch case, на вход может придти число от 0 до 23 Если число от 0 до 2 - выведите сообщение:
         "Сутки только начались"
@@ -48,16 +64,21 @@
     <li>Если число от 17 - 19 - выведите сообщение: "Дорога домой"</li>
     <li>Если число от 19 - 23 - выведите сообщение: "Урррааа :)"</li>
 </ol>
-<button class="btn bnt-link btn-primary" onclick="schoolCase()">Switch task</button>
-<button class="btn bnt-link btn-warning" onclick="schoolIfElif()">Elif task</button>
+        </div>
 
-<script>
-let firstVal = 5;
-let secondVal = 7;
-let max = firstVal > secondVal ? firstVal : secondVal;
-console.log(max);
-
-</script>
-
+<button class="btn btn-primary" onclick="schoolCase()">Switch task</button>
+<button class="btn btn-warning" onclick="schoolIfElif()">Elif task</button>
+    </div>
+<ul>
+    <li>Используя все 3 варианта цикла </li>
+    <li>Есть строка 'adfsdfdsaffasfaaaaasfsfasfdsf' проверить, сколько раз встречается буква a и вывести ее в консоль</li>
+    <li>первый - строка, вторая - буква, которую ищем </li>
+</ul>
+<input type="text" id="stringfield" value="" placeholder="somestring"/>
+<input type="text" id="letterfield" value="" placeholder="letter" maxlength="1"/>
+<button class="btn btn-primary" onclick="countLetter('somestring', 'letter')">
+    Function - Click button and look into console
+</button>
+</div>
 </body>
 </html>
