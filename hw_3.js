@@ -45,17 +45,17 @@ newUserModified = ModifiedCopy(user, name, age, color)
 console.log(newUserModified)
 //4. Реализовать аналогичный функционал метода Object.assign():
 //copy(first, second, third)
-function assignUnderHood(first, second, third){
+function assignUnderHood({}, ...args){
+    i = 0;
     let result = {};
-    for (val in first){
-        result[val] = first[val]
-        debugger;
-    }for (val in second){
-        result[val] = second[val]
-    }for (val in third){
-        result[val] = third[val]
+    while (i < args.length){
+        for (val in args[i]){
+        result[val] = args[i][val];
     }
-    return result
-}
-let result = assignUnderHood(user, newUser, newUserModified)
+    i ++;
+    }
+    return result;
+    }
+
+let result = assignUnderHood({}, user, newUser, newUserModified)
 console.log(result)
