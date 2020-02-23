@@ -80,7 +80,7 @@ function getThreeCharNames(namesList){
     for (i = 0; i < namesList.length; i++){
         if (namesList[i].length < 4) {
         resNames.push(namesList[i]);
-        }else{
+        }else {
            continue;
         }
     }
