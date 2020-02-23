@@ -12,7 +12,7 @@ function sumGetSimple(someList){
 console.log(sumGetSimple(numList))
 let res = 0;
 function sumGetEach(num){
-    res += someList;
+    res += num;
     return res;
 }
 numList.forEach(sumGetEach);
@@ -87,7 +87,7 @@ function getThreeCharNames(namesList){
     return resNames;
 }
 function threeCharFilter(someItem){
-    return namesList.length < 4;
+    return someItem.length < 4;
 }
 console.log(getThreeCharNames(someNamesList))
 res = someNamesList.filter(threeCharFilter)
