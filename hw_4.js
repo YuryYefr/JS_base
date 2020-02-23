@@ -11,7 +11,7 @@ function sumGetSimple(someList){
 }
 console.log(sumGetSimple(numList))
 let res = 0;
-function sumGetEach(someList){
+function sumGetEach(num){
     res += someList;
     return res;
 }
@@ -55,7 +55,7 @@ function getSumThreeArrays(someList, anotherList, thirdList){
 }
 console.log(getSumThreeArrays(numList, secondList, thirdList))
 //4. Есть массив [1, 4, 5, 1, 3, 3] На основе его создать новый массив, где
-//будут квардат каждого число, используя for и map
+//будут квадрат каждого число, используя for и map
 squareArr = [1, 4, 5, 1, 3, 3];
 
 function getSquares(someList){
@@ -86,7 +86,7 @@ function getThreeCharNames(namesList){
     }
     return resNames;
 }
-function threeCharFilter(namesList){
+function threeCharFilter(someItem){
     return namesList.length < 4;
 }
 console.log(getThreeCharNames(someNamesList))
