@@ -5,7 +5,7 @@ function changeColor(){
     let randint = Math.random();
     console.log('background-color is rgba(' + first + ',' + second + ',' + third + ',' + randint + ')');
     $('body').css('background-color', `rgba(${first}, ${second}, ${third}, ${randint})`);
-};
+}
 function accessAuthorization(){
     let age = prompt('Type your age');
     if (Number.isInteger(+age) && age >= 18){
@@ -16,8 +16,8 @@ function accessAuthorization(){
     alert('Incorrect input');
     } else {
     alert('Incompatible data format!');
-    };
-};
+    }
+}
 function schoolCase(){
     switch (+prompt('number')) {
     case 0:
@@ -27,7 +27,7 @@ function schoolCase(){
     case 2:
     case 3:
     case 4:
-    console.log('You can sleep for now')
+    console.log('You can sleep for now');
     break;
     case 5:
     case 6:
@@ -60,9 +60,9 @@ function schoolCase(){
     case 23:
     console.log('Hell Yeah!');
     break;
-}};
+}}
 function schoolIfElif(){
-let incomingHour = prompt('number')
+let incomingHour = prompt('number');
 if (incomingHour == 0 || incomingHour == 1){
      console.log('The day has just began');
 } else if (incomingHour == 2 || incomingHour == 3 || incomingHour == 4){
@@ -80,6 +80,6 @@ if (incomingHour == 0 || incomingHour == 1){
 } else if (incomingHour == 20 || incomingHour == 21 || incomingHour ==22 || incomingHour == 23){
     console.log('Hell Yeah!');
 }
-};
+}
 
 

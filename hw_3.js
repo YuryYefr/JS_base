@@ -1,15 +1,15 @@
 //1.Создать функцию copy, которая принимает на вход один объект и возвращает точную копию (новый объект) с
 //теми же свойствами.
 function objectCopy(someobj){
-    let copiedObject = {}
+    let copiedObject = {};
     for (val in someobj){
         copiedObject[val] = someobj[val];
     }
     return copiedObject
 }
 user = {name: 'Some', age: 25, color: 'Black', height: 190}
-var newUser = objectCopy(user)
-console.log(newUser)
+var newUser = objectCopy(user);
+console.log(newUser);
 //2.Создать функцию copy, которая принимает на вход один объект и возвращает точную копию (новый объект) с
 //теми же свойствами.
 function isEqual(firstobj, secondobj){
@@ -40,9 +40,9 @@ function ModifiedCopy(someobj, name, age, color){
 }
 name = 'Max';
 age = 20;
-color = 'red'
-newUserModified = ModifiedCopy(user, name, age, color)
-console.log(newUserModified)
+color = 'red';
+newUserModified = ModifiedCopy(user, name, age, color);
+console.log(newUserModified);
 //4. Реализовать аналогичный функционал метода Object.assign():
 //copy(first, second, third)
 function assignUnderHood({}, ...args){
@@ -57,5 +57,5 @@ function assignUnderHood({}, ...args){
     return result;
     }
 
-let result = assignUnderHood({}, user, newUser, newUserModified)
-console.log(result)
+let result = assignUnderHood({}, user, newUser, newUserModified);
+console.log(result);
